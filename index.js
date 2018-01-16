@@ -10,7 +10,7 @@ $(function () {
 		  $( this ).replaceWith( '<a href="tel:' + $( this ).text() + '">' + $( this ).text() + "</a>" );
 		});
 		fillRightColumn(data);
-		//manage links
+		//managing links
 		$('footer i.fa-github').on('click', function() {
 			window.location = 'https://github.com/elolivier';
 		});
@@ -96,8 +96,8 @@ function fillEducation(data) {
 	let filling = '';
 	$(data.education).each(function(i, eachCareer) {
 		filling += '<div class="w3-container"><h5 class="w3-opacity"><b>';
-		filling += eachCareer.school + '</b></h5>' + '<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>';
-		filling += eachCareer.from + ' - ' + eachCareer.to + '</h6><p>' + eachCareer.degree + '</p><hr></div>';
+		filling += eachCareer.degree + '</b></h5>' + '<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>';
+		filling += eachCareer.from + ' - ' + eachCareer.to + '</h6><p>' + eachCareer.school + '</p><hr></div>';
 	});
 	return filling;
 }
