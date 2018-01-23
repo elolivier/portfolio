@@ -21,7 +21,7 @@ $(function () {
 			window.location = 'https://twitter.com/ernesto_olivier';
 		});
 		$('footer i.fa-linkedin').on('click', function() {
-			window.location = 'www.linkedin.com/in/ernesto-olivier';
+			window.location = 'https://www.linkedin.com/in/ernesto-olivier';
 		});
 	});
 });
