@@ -7,13 +7,16 @@
 	"cel":"+34611384414",
 	"skills":[
 		{"skill":"HTML5 (HTML/CSS/JS)","pct":"75"},
-		{"skill":"JQuery","pct":"75"},
-		{"skill":"Bootstrap","pct":"50"},
-		{"skill":"API","pct":"50"},
+                {"skill":"API","pct":"50"},
 		{"skill":"GIT/GitHub","pct":"50"},
-		{"skill":"Java","pct":"40"},
+		{"skill":"Java","pct":"50"},
 		{"skill":"Spring (Boot/Security)","pct":"30"},
-		{"skill":"SCRUM","pct":"70"}
+		{"skill":"SCRUM","pct":"90"},
+                {"skill":"Docker","pct":"65"},
+                {"skill":"Kubernetes","pct":"65"},
+                {"skill":"GKE","pct":"70"},
+                {"skill":"AKS","pct":"50"},
+                {"skill":"EKS","pct":"50"}
 	],
 	"languages":[
 		{"language":"Spanish","pct":"100"},
