@@ -1,6 +1,6 @@
 ﻿{
   "name": "Ernesto",
-  "lastname": "Olivier",
+  "lastName": "Olivier",
   "profession": "IT Manager",
   "hometown": "Barcelona, SP",
   "email": "Send me an e-mail",
@@ -15,7 +15,7 @@
       "pct": "50"
     },
     {
-      "skill": "GIT/GitHub",
+      "skill": "Git",
       "pct": "50"
     },
     {
@@ -27,7 +27,7 @@
       "pct": "30"
     },
     {
-      "skill": "SCRUM",
+      "skill": "Scrum",
       "pct": "90"
     },
     {
@@ -39,15 +39,15 @@
       "pct": "75"
     },
     {
-      "skill": "GKE",
+      "skill": "Kubernetes Cloud Providers (GKE, AKS, EKS)",
       "pct": "70"
     },
     {
-      "skill": "AKS",
+      "skill": "Microservices",
       "pct": "50"
     },
     {
-      "skill": "EKS",
+      "skill": "Messaging (RabbitMQ)",
       "pct": "50"
     }
   ],

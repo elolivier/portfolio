@@ -27,13 +27,14 @@ $(function () {
 });
 
 function fillLeftColumn(data) {
-	$('title, #name').html(data.name + ' ' + data.lastname);
+	$('title, #name').html(data.name + ' ' + data.lastName);
 	$('#profession').append(data.profession);
 	$('#home').append(data.hometown);
 	$('#mail').append('<a href="#" data-mail="ernesto.olivier">' + data.email + '</a>');
 	$('#cel').append('<strong>' + data.cel + '</strong>');
-	$('#skills').html(fillSkills(data));
 	$('#languages').html(fillLanguages(data));
+	$('#skills').html(fillSkills(data));
+	$('#courses').html(fillCourses(data));
 	$('#awards').html(fillAwards(data));
 }
 
@@ -63,6 +64,15 @@ function fillLanguages(data) {
 		filling += eachLanguage.pct + '%"></div></div>';
 	}); 
 	return filling;
+}
+
+function fillCourses(data) {
+	let filling = '';
+    $(data.courses).each(function(i, eachCourse) {
+        filling += '<p><b>' + eachCourse.course + '</b>';
+        filling += '<br>' + eachCourse.date + ' ' + eachCourse.institution + '</p>';
+    });
+    return filling;
 }
 
 function fillAwards(data) {
@@ -97,8 +107,8 @@ function fillCertificates(data) {
     let filling = '';
     $(data.certificates).each(function(i, eachCertificate) {
         filling += '<div class="w3-container"><h5 class="w3-opacity"><b>';
-        filling += eachCertificate.certificate + '</b></h5>' + '<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>';
-        filling += eachCertificate.date + '</h6><p>' + eachCertificate.institution + '</p><hr></div>';
+        filling += eachCertificate.certificate+ ' / ' + eachCertificate.institution + '</b></h5>' + '<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>';
+        filling += eachCertificate.date + '</h6></div>';
     });
     return filling;
 }
