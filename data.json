@@ -1,53 +1,182 @@
 ﻿{
-	"name":"Ernesto",
-	"lastname":"Olivier",
-	"profession":"IT Manager",
-	"hometown":"Barcelona, SP",
-	"email":"Send me an e-mail",
-	"cel":"+34646948293",
-	"skills":[
-		{"skill":"HTML5 (HTML/CSS/JS)","pct":"75"},
-                {"skill":"API","pct":"50"},
-		{"skill":"GIT/GitHub","pct":"50"},
-		{"skill":"Java","pct":"50"},
-		{"skill":"Spring (Boot/Security)","pct":"30"},
-		{"skill":"SCRUM","pct":"90"},
-                {"skill":"Docker","pct":"75"},
-                {"skill":"Kubernetes","pct":"75"},
-                {"skill":"GKE","pct":"70"},
-                {"skill":"AKS","pct":"50"},
-                {"skill":"EKS","pct":"50"}
-	],
-        "Certificates":[
-                {},
-                {},
-                {},
-                {}
-        ],
-	"languages":[
-		{"language":"Spanish","pct":"100"},
-		{"language":"English","pct":"75"}
-	],
-	"awards":[
-		{"year":"2013","award":"Elite Employee Huawei Technologies"},
-		{"year":"2006","award":"Diploma of gratitude signed by Quality Assurance manager of Movilnet"},
-		{"year":"2002","award":"Diploma of gratitude signed by Chief of group Los Nuevos Teques, Venezuelan Scouts Association"}
-	],
-	"work":[
-		{"position":"Java Web Developer","organization":"Ubiqum Code Academy","from":"Oct 2017","to":"Current","achivments":["Design and develop a responsive web for a bookstore. Technologies: HTML5, JQuery, JSON, Bootstrap among others Front-End tools and API","Design and develop a mobile web to follow FIFA World Cup 2018. Technologies: HTML5, JQuery, JSON, Mustache(logic-less template) and Bootstrap","Develope a version of Battleship game. Back-End Technologies: Java, API REST and Spring (Boot and Security). Front-End Technologies: HTML5, JQuery, JSON and Bootstrap"]},
-		{"position":"Project Manager","organization":"Huawei Technologies","from":"Nov 2014","to":"Sep 2016","achivments":["Implement PENTAHO in 100% of NOC Service lines of product","Close 100% of Datacenter Service on time and with customer satisfaction","Consolidate 50% of procurement suppliers in H1-2016 for EBG projects"]},
-		{"position":"NOC Supervisor","organization":"Huawei Technologies","from":"Feb 2012","to":"Oct 2014","achivments":["Lead PENTAHO conceptualization and implementation in NOC Service","Reduce 20% penalties for mispractice in 2013","Improve 35% service KPI in 2013"]},
-		{"position":"Team Leader","organization":"Telecommunications Industry","from":"Nov 2002","to":"Jan 2012","achivments":["Analyze strategic processes in Digitel NOC and propose improvements in 2011","Succesfully control project for deploy and installation of votation machines for national elections in 2010","Train Movilnet NOC staff (35%) for implementation of Quality System in 2005"]}
-	],
-	"education":[
-		{"school":"Simón Bolívar University","from":"2010","to":"2012","degree":"Master in Telecommunications Management"},
-		{"school":"Alejandro de Humboldt University","from":"2005","to":"2008","degree":"Computers Engineer"},
-		{"school":"Simón Bolívar University","from":"1997","to":"2002","degree":"Electronics Technician"}
-	],
-        "courses":[
-                {},
-                {},
-                {},
-                {}
-        ]
+  "name": "Ernesto",
+  "lastname": "Olivier",
+  "profession": "IT Manager",
+  "hometown": "Barcelona, SP",
+  "email": "Send me an e-mail",
+  "cel": "+34646948293",
+  "skills": [
+    {
+      "skill": "HTML5 (HTML/CSS/JS)",
+      "pct": "75"
+    },
+    {
+      "skill": "API",
+      "pct": "50"
+    },
+    {
+      "skill": "GIT/GitHub",
+      "pct": "50"
+    },
+    {
+      "skill": "Java",
+      "pct": "50"
+    },
+    {
+      "skill": "Spring (Boot/Security)",
+      "pct": "30"
+    },
+    {
+      "skill": "SCRUM",
+      "pct": "90"
+    },
+    {
+      "skill": "Docker",
+      "pct": "75"
+    },
+    {
+      "skill": "Kubernetes",
+      "pct": "75"
+    },
+    {
+      "skill": "GKE",
+      "pct": "70"
+    },
+    {
+      "skill": "AKS",
+      "pct": "50"
+    },
+    {
+      "skill": "EKS",
+      "pct": "50"
+    }
+  ],
+  "certificates": [
+    {
+		"certificate": "Certified Blockchain Solution Architect",
+		"institution": "Blockchain Training Alliance",
+		"date": "JUN 2020"
+	},
+    {
+		"certificate": "Professional Certificate in Blockchain for Business",
+		"institution": "The Linux Foundation",
+		"date": "NOV 2019"
+	},
+    {
+		"certificate": "Scrum Master",
+		"institution": "European Scrum",
+		"date": "FEB 2018"
+	},
+    {
+		"certificate": "English Proficiency B2 CEFR",
+		"institution": "Open English",
+		"date": "SEP 2016"
+	}
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "pct": "100"
+    },
+    {
+      "language": "English",
+      "pct": "75"
+    }
+  ],
+  "awards": [
+    {
+      "year": "2013",
+      "award": "Elite Employee Huawei Technologies"
+    },
+    {
+      "year": "2006",
+      "award": "Diploma of gratitude signed by Quality Assurance manager of Movilnet"
+    },
+    {
+      "year": "2002",
+      "award": "Diploma of gratitude signed by Chief of group Los Nuevos Teques, Venezuelan Scouts Association"
+    }
+  ],
+  "work": [
+    {
+      "position": "Project Director",
+      "organization": "Consulnet Strategies and Solutions",
+      "from": "Apr 2018",
+      "to": "Feb 2020",
+      "achievements": [
+        "Lead the architecture, development and deployment of a Fintech App",
+        "Create and maintain product backlog and wiki",
+        "Resolve technological and organizational impediments",
+	    "BitGen App architecture video presentation: https://bit.ly/2I0RltF",
+	    "BitGen App mobile UI video presentation: https://bit.ly/2Pt85hp"
+      ]
+    },
+    {
+      "position": "Project Manager",
+      "organization": "Huawei Technologies",
+      "from": "Feb 2012",
+      "to": "Sep 2016",
+      "achievements": [
+        "Improve time to manage information about service KPI in 300% implementing PENTAHO BI in NOC Service",
+        "Close 100% of Datacenter Service on time and with customer satisfaction",
+        "Consolidate 50% of procurement suppliers in H1-2016 for EBG projects",
+        "Reduce 20% penalties for malpractice in 2013",
+        "Improve 35% service KPI in 2013"
+      ]
+    },
+    {
+      "position": "Team Leader",
+      "organization": "Telecommunications Industry",
+      "from": "Nov 2002",
+      "to": "Jan 2012",
+      "achievements": [
+        "Analyze strategic processes in Digitel NOC and propose improvements in 2011",
+        "Successfully control project for deploy and installation of voting machines for national elections in 2010",
+        "Be trainer for implementation of Quality System in Movilnet NOC staff (35%) in 2005"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Ubiqum Code Academy",
+      "from": "2017",
+      "to": "2018",
+      "degree": "Java Web Development"
+    },
+    {
+      "school": "Simón Bolívar University",
+      "from": "2010",
+      "to": "2012",
+      "degree": "Master in Telecommunications Management"
+    },
+    {
+      "school": "Alejandro de Humboldt University",
+      "from": "2005",
+      "to": "2008",
+      "degree": "Computers Engineering"
+    },
+    {
+      "school": "Simón Bolívar University",
+      "from": "1997",
+      "to": "2002",
+      "degree": "Electronics Technical Engineering"
+    }
+  ],
+  "courses": [
+    {
+		"course": "Introduction to Hyperledger Blockchain Technologies",
+		"institution": "The Linux Foundation",
+		"date": "NOV 2019"
+	},
+    {
+		"course": "DevOps Management of IT Architectures",
+		"institution": "La Salle University",
+		"date": "JUN 2018"
+	},
+    {
+		"course": "Docker Fundamentals",
+		"institution": "Docker",
+		"date": "DEC 2018"
+	}
+  ]
 }

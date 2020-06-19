@@ -39,6 +39,7 @@ function fillLeftColumn(data) {
 
 function fillRightColumn(data) {
 	$('#work-experience').append(fillWorkExperience(data));
+	$('#certificates').append(fillCertificates(data));
 	$('#education').append(fillEducation(data));
 }
 
@@ -84,12 +85,22 @@ function fillWorkExperience(data) {
 			filling += eachWork.to + '</h6>';
 		}
 		filling += '<ul>';
-		$(eachWork.achivments).each(function(j, eachAchivment) {
-			filling += '<li>' + eachAchivment + '</li>';
+		$(eachWork.achievements).each(function(j, eachAchievement) {
+			filling += '<li>' + eachAchievement + '</li>';
 		});
 		filling += '</ul><hr></div>';
 	});
 	return filling;
+}
+
+function fillCertificates(data) {
+    let filling = '';
+    $(data.certificates).each(function(i, eachCertificate) {
+        filling += '<div class="w3-container"><h5 class="w3-opacity"><b>';
+        filling += eachCertificate.certificate + '</b></h5>' + '<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>';
+        filling += eachCertificate.date + '</h6><p>' + eachCertificate.institution + '</p><hr></div>';
+    });
+    return filling;
 }
 
 function fillEducation(data) {
