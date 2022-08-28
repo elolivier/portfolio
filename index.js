@@ -32,21 +32,21 @@ function fillLeftColumn(data) {
 	$('#home').append(data.hometown);
 	$('#mail').append('<a href="#" data-mail="ernesto.olivier">' + data.email + '</a>');
 	$('#cel').append('<strong>' + data.cel + '</strong>');
-	$('#languages').html(fillLanguages(data));
-	$('#skills').html(fillSkills(data));
-	$('#courses').html(fillCourses(data));
-	$('#awards').html(fillAwards(data));
+	$('#languages').html(fillLanguages(data.languages));
+	$('#skills').html(fillSkills(data.skills));
+	$('#courses').html(fillCourses(data.courses));
+	$('#awards').html(fillAwards(data.awards));
 }
 
 function fillRightColumn(data) {
-	$('#work-experience').append(fillWorkExperience(data));
-	$('#certificates').append(fillCertificates(data));
-	$('#education').append(fillEducation(data));
+	$('#work-experience').append(fillWorkExperience(data.workHistory));
+	$('#certificates').append(fillCertificates(data.certificates));
+	$('#education').append(fillEducation(data.education));
 }
 
-function fillSkills(data) {
+function fillSkills(skills) {
 	let filling = '';
-	$(data.skills).each(function(i, eachSkill) {
+	$(skills).each(function(i, eachSkill) {
 		filling += '<p>' + eachSkill.skill + '</p>';
 		filling += '<div class="w3-light-grey w3-round-xlarge w3-small">';
         filling += '<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:';
@@ -55,37 +55,37 @@ function fillSkills(data) {
 	return filling;
 }
 
-function fillLanguages(data) {
+function fillLanguages(languages) {
 	let filling = '';
-	$(data.languages).each(function(i, eachLanguage) {
+	$(languages).each(function(i, eachLanguage) {
 		filling += '<p>' + eachLanguage.language + '</p>';
-		filling += '<div class="w3-light-grey w3-round-xlarge">';
-		filling += '<div class="w3-round-xlarge w3-teal" style="height:18px;width:';
-		filling += eachLanguage.pct + '%"></div></div>';
+		filling += '<div class="w3-light-grey w3-round-xlarge w3-small">';
+		filling += '<div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:';
+		filling += eachLanguage.pct + '%">' + eachLanguage.pct + '%</div></div>';
 	}); 
 	return filling;
 }
 
-function fillCourses(data) {
+function fillCourses(courses) {
 	let filling = '';
-    $(data.courses).each(function(i, eachCourse) {
+    $(courses).each(function(i, eachCourse) {
         filling += '<p><b>' + eachCourse.course + '</b>';
         filling += '<br>' + eachCourse.date + ' ' + eachCourse.institution + '</p>';
     });
     return filling;
 }
 
-function fillAwards(data) {
+function fillAwards(awards) {
 	let filling = '';
-	$(data.awards).each(function(i, eachAward) {
+	$(awards).each(function(i, eachAward) {
 		filling += '<p>' + eachAward.year + ' ' + eachAward.award + '</p>';
 	}); 
 	return filling;
 }
 
-function fillWorkExperience(data) {
+function fillWorkExperience(workHistory) {
 	let filling = '';
-	$(data.work).each(function(i, eachWork) {
+	$(workHistory).each(function(i, eachWork) {
 		filling += '<div class="w3-container"><h5 class="w3-opacity"><b>' + eachWork.position + ' / ' + eachWork.organization + '</b></h5>';
 		filling += '<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>';
 		filling += eachWork.from + ' - ';
@@ -103,9 +103,9 @@ function fillWorkExperience(data) {
 	return filling;
 }
 
-function fillCertificates(data) {
+function fillCertificates(certificates) {
     let filling = '';
-    $(data.certificates).each(function(i, eachCertificate) {
+    $(certificates).each(function(i, eachCertificate) {
         filling += '<div class="w3-container"><h5 class="w3-opacity"><b>';
         filling += eachCertificate.certificate+ ' / ' + eachCertificate.institution + '</b></h5>' + '<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>';
         filling += eachCertificate.date + '</h6></div>';
@@ -113,9 +113,9 @@ function fillCertificates(data) {
     return filling;
 }
 
-function fillEducation(data) {
+function fillEducation(education) {
 	let filling = '';
-	$(data.education).each(function(i, eachCareer) {
+	$(education).each(function(i, eachCareer) {
 		filling += '<div class="w3-container"><h5 class="w3-opacity"><b>';
 		filling += eachCareer.degree + '</b></h5>' + '<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>';
 		filling += eachCareer.from + ' - ' + eachCareer.to + '</h6><p>' + eachCareer.school + '</p><hr></div>';

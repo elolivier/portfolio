@@ -1,30 +1,14 @@
 ﻿{
   "name": "Ernesto",
   "lastName": "Olivier",
-  "profession": "IT Manager",
+  "profession": "Blockchain | Web3 | NFT",
   "hometown": "Barcelona, SP",
   "email": "Send me an e-mail",
   "cel": "+34646948293",
   "skills": [
     {
-      "skill": "HTML5 (HTML/CSS/JS)",
-      "pct": "75"
-    },
-    {
-      "skill": "API",
-      "pct": "50"
-    },
-    {
-      "skill": "Git",
-      "pct": "50"
-    },
-    {
-      "skill": "Java",
-      "pct": "50"
-    },
-    {
-      "skill": "Spring (Boot/Security)",
-      "pct": "30"
+      "skill": "Hyperledger Fabric",
+      "pct": "70"
     },
     {
       "skill": "Scrum",
@@ -39,16 +23,16 @@
       "pct": "75"
     },
     {
+      "skill": "Helm & Helmfile",
+      "pct": "70"
+    },
+    {
       "skill": "Kubernetes Cloud Providers (GKE, AKS, EKS)",
       "pct": "70"
     },
     {
-      "skill": "Microservices",
-      "pct": "50"
-    },
-    {
-      "skill": "Messaging (RabbitMQ)",
-      "pct": "50"
+      "skill": "Basic FrontEnd (HTML/CSS/JS)",
+      "pct": "85"
     }
   ],
   "certificates": [
@@ -81,6 +65,14 @@
     {
       "language": "English",
       "pct": "75"
+    },
+    {
+      "language": "Go",
+      "pct": "60"
+    },
+    {
+      "language": "Java",
+      "pct": "50"
     }
   ],
   "awards": [
@@ -97,7 +89,20 @@
       "award": "Diploma of gratitude signed by Chief of group Los Nuevos Teques, Venezuelan Scouts Association"
     }
   ],
-  "work": [
+  "workHistory": [
+    {
+      "position": "Blockchain Developer",
+      "organization": "Dimatica Software Development",
+      "from": "Nov 2020",
+      "to": "current position",
+      "achievements": [
+        "Develop clean and scalable code",
+        "Contribute to development of an abstraction layer to operate a blockchain network",
+        "Support fellow developers in their journey to learn Blockchain",
+        "Contribute to create and maintain product backlog and wiki",
+        "Design stories specifying thecnical details, step by step and DoD"
+      ]
+    },
     {
       "position": "Project Director",
       "organization": "Consulnet Strategies and Solutions",
